@@ -28,6 +28,6 @@ def predict_charges():
     pred_price = insurance_obj.get_predicted_price()
 
     return render_template('medical_insurance.html', prediction=pred_price)
-
+    
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port='8080')
+    app.run(host='0.0.0.0',  port=config.PORT_NUMBER)
